@@ -40,7 +40,6 @@ if __name__ == '__main__':
         t = 1  # Change this value to the time interval for updating the Top Deals!
         getting_top_items()
         print(f"Next Update will be in {t} minutes...\n\n")
-        # print("////  To stop this process enter 'ctrl+c' or 'cmd+c'")
         time.sleep(t*60)
 
 
