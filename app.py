@@ -21,7 +21,7 @@ def getting_top_items():
         products.append(prods_obj[i].text)
         links.append(f"www.flipkart.com{links_obj[i]['href']}")
         cost_details.append(costs_obj[i].text)
-        with open('DealOfTheDay/topDeal.txt', 'a') as file_to_write:
+        with open('topDeal.txt', 'a') as file_to_write:
             file_to_write.write("\n"+products[i]+"\n")
             try:
                 file_to_write.write(cost_details[i]+"\n")
